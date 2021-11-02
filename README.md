@@ -1,2 +1,2 @@
-Desafío: Menú e-commerce
-Cats & Dogs Pet Shop
+Desafío: Menú e-commerce:
+  Cats & Dogs Pet Shop
