@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { AppBar, Button, Menu, MenuList, Tab, Tabs, Toolbar, Typography, MenuItem } from '@mui/material'
+import CartWidget from './CartWidget';
 
 
 const Navbar = () => {
@@ -48,6 +49,7 @@ const Navbar = () => {
                     >
                         Perfil
                     </Button>
+                    <CartWidget />
                 </Toolbar>
             </AppBar >
 
@@ -64,6 +66,8 @@ const Navbar = () => {
                 <MenuList onClick={handleMenuClose}>Registrate</MenuList>
                 <MenuList onClick={handleMenuClose}>Iniciar Sesión</MenuList>
             </Menu>
+
+            
         </>
     );
 };
