@@ -1,2 +1,2 @@
-Desafío: Menú e-commerce:
+Desafío: Crea tu landing
   Cats & Dogs Pet Shop
