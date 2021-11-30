@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Button } from "@material-ui/core";
 
 const ItemCount = ({ stock, initial }) => {
     const [count, setCount] = useState(initial);
@@ -27,12 +28,12 @@ const ItemCount = ({ stock, initial }) => {
         <>
             <h1>Contador:</h1>
             <div>
-                <button className="ui primary button" onClick={addItem}>+</button>
+                <button style={{ backgroundColor: '#e71837', color: '#FFFFFF' }} onClick={addItem}>+</button>
                 <h1>{count}</h1>
-                <button className="ui primary button" onClick={quitItem}>-</button>
+                <button style={{ backgroundColor: '#536895', color: '#FFFFFF' }} onClick={quitItem}>-</button>
             </div>
             <br></br>
-            <button className="ui primary button" onClick={onAddItem}>Add to Cart</button>
+            <Button style={{ backgroundColor: '#12824C', color: '#FFFFFF' }} onClick={onAddItem}>Add to Cart</Button>
         </>
     )
 }
