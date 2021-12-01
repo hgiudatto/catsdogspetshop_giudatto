@@ -2,6 +2,7 @@ import { React, useState, useEffect } from 'react';
 import ItemCount from './ItemCount';
 import getProducts from "../services/productsPromise";
 import ItemList from './ItemList';
+import { Link } from 'react-router-dom';
 
 const ItemListContainer = ({ greeting }) => {
 
@@ -29,7 +30,11 @@ const ItemListContainer = ({ greeting }) => {
         <>
             <h2>Item List Container</h2>
             <h3>{greeting}</h3>
+            <Link to="/about">
+                <h1>About</h1>
+            </Link>
             <ItemCount stock={5} initial={1} />
+            <h1>ACA VA EL ITEMDETAILCONTAINER</h1>
             <ItemList products={products} />
         </>
     );
