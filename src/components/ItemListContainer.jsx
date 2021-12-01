@@ -7,6 +7,16 @@ const ItemListContainer = ({ greeting }) => {
 
     const [products, setProducts] = useState([]);
 
+    /* const fetchProducts = () => {
+        fetch("../JSON/DataList.json")
+            .then((response) => response.json())
+            .then((data) => console.log("A ver la data: ", data));
+    };
+
+    useEffect(() => {
+        setTimeout(() => fetchProducts(), 2000);
+    }, []); */
+
     useEffect(() => {
         getProducts
             .then(res => {

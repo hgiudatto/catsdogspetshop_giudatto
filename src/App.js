@@ -2,14 +2,20 @@ import React from 'react'
 import { ThemeProvider } from '@emotion/react';
 import Navbar from './components/Navbar';
 import theme from './utils/theme';
+import { Routes, Route } from 'react-router-dom';
 import ItemListContainer from './components/ItemListContainer';
+import About from "./components/About";
 
 const App = () => {
 
   return (
     <ThemeProvider theme={theme}>
       <Navbar />
-      <ItemListContainer greeting="Hello User" />
+      <Routes>
+        <Route path="/" element={<ItemListContainer greeting="Hello User" />} />
+        <Route path="item/:id" element={<ItemListContainer />} />
+        <Route path="about" element={<About />} />
+      </Routes>
     </ThemeProvider>
   )
 }
