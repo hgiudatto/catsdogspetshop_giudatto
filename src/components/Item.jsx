@@ -6,7 +6,7 @@ const Item = ({ description, price, stock, title, image, id }) => {
     return (
         <Link to={`/item/${id}`}>
             <img src={image} alt={title} />
-            <div>
+            <div className="flex bg-info">
                 <h3>{title}</h3>
                 <p>{description}</p>
                 <h2>{price}</h2>
@@ -16,4 +16,4 @@ const Item = ({ description, price, stock, title, image, id }) => {
     );
 };
 
-export default Item
+export default Item;

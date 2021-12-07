@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Button } from "@material-ui/core";
 
-const ItemCount = ({ stock, initial }) => {
+const ItemCount = ({ stock, initial, onAdd }) => {
     const [count, setCount] = useState(initial);
     /* const initial = 1; */
 
@@ -22,6 +22,7 @@ const ItemCount = ({ stock, initial }) => {
     const onAddItem = () => {
         const msg = `Agregaste ${count} producto`;
         (count === 1) ? alert(msg) : alert(`${msg}s`);
+        onAdd(count);
     };
 
     return (
